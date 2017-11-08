@@ -3,4 +3,4 @@
 
 # Running tests:
 
-python tests.py
+    ~$ python tests.py
