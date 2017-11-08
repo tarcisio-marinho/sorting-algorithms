@@ -55,7 +55,18 @@ def quicksort_piorcaso():
     teste3()
     print("Fim dos testes")
 
+def merge_sort_test():
+    lista = []
+
+        for i in range(40000000):
+            lista.append(i)
+
+        tempo = time.time()
+        merge_sort(lista)
+        fim = time.time()
+        print(str(fim - tempo))
 
 if __name__ == "__main__":
     pass
-    quicksort_piorcaso()
+    #quicksort_piorcaso()
+    merge_sort_test()
