@@ -12,35 +12,53 @@ from bubblesort import bubble_sort
 from timsort import tim_sort
 
 
-def quick_vs_tim():
-    # PIOR CASO 
-    lista =[]
-    lista2 = []
+def quicksort_piorcaso():
+    def teste1():
+        lista =[]
 
-    # 40MILHOES DE INTEIROS 
-    for i in range(40000000):
-        lista.append(i)
+        for i in range(400000):
+            lista.append(i)
+        
+        tempo = time.time()
+        quick_sort(lista, 0, len(lista) - 1)
+        fim = time.time()
+        print("[TESTE] 400000 (400 mil) inteiros\n[TEMPO] "+ str(fim - tempo))
+        print("\n")
 
-    lista2 = lista
+    def teste2():
+        lista = []
 
-    tempo = time.time()
-    lista2.sort()
-    fim = time.time()
+        for i in range(4000000):
+            lista.append(i)
 
-    print "tim sort: " + str(fim - tempo) # BIG O NO PIOR CASO É O(NlogN)
+        tempo = time.time()
+        quick_sort(lista, 0, len(lista)-1)
+        fim = time.time()
+        print("[TESTE] 4000000 (4 milhoes) inteiros\n[TEMPO] "+ str(fim - tempo))
+        print("\n")
 
-    tempo = time.time()
-    main_quicksort(lista)
-    fim = time.time()
+    def teste3():
+        lista = []
 
-    print "meu quicksort : " + str(fim - tempo) # BIG O NO PIOR CASO É O(N²)
+        for i in range(40000000):
+            lista.append(i)
 
-def quick_vs_merge():
-    pass
+        tempo = time.time()
+        quick_sort(lista, 0, len(lista)-1)
+        fim = time.time()
+        print("[TESTE] 400000000 (40 milhoes) inteiros\n[TEMPO] "+ str(fim - tempo))
+        print("\n")
+
+    print("Testando o pior caso do quicksort")
+    teste1()
+    teste2()
+    teste3()
+    print("Fim dos testes")
 
 
 if __name__ == "__main__":
     pass
+    quicksort_piorcaso()
 
     #lista = [10, 20, 30, 2]
     #quicksort(lista, 0, len(lista)-1)

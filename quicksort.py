@@ -29,6 +29,6 @@ def quick_sort(lista, esq, dir):
         return
     pivot = lista[ (esq + dir) / 2]
     index = partition(lista, esq, dir, pivot)
-    quicksort(lista, esq, index-1)
-    quicksort(lista, index, dir)
+    quick_sort(lista, esq, index-1)
+    quick_sort(lista, index, dir)
 

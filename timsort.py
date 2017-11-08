@@ -77,6 +77,3 @@ def tim_sort(lista, n):
 
         size = 2*size
 
-lista = [30, 2, 1, 56, 32, 13, 4]
-tim_sort(lista, len(lista))
-print(lista)
