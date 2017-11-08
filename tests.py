@@ -207,9 +207,8 @@ def quick_vs_selec_vs_insr():
     print("\n")
 
 if __name__ == "__main__":
-    pass
-    #quicksort_piorcaso()
+    quicksort_piorcaso()
     quicksort_average()
-    #quicksort_vs_bubble()
-    #quicksort_vs_mergesort()
-    #quick_vs_selec_vs_insr()
+    quicksort_vs_bubble()
+    quicksort_vs_mergesort()
+    quick_vs_selec_vs_insr()
