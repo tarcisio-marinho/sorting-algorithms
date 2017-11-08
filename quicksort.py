@@ -3,6 +3,12 @@
 # by Tarcisio marinho
 # github.com/tarcisio-marinho
 
+''' BIG O
+melhor caso - O(n log(n))
+caso comum - O(n log(n))
+pior caso - O(n^2)
+'''
+
 def partition(lista, esq, dir, pivot):
     while(esq <= dir):
         while(lista[esq] < pivot):

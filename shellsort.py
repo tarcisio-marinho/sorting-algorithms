@@ -3,6 +3,12 @@
 # by Tarcisio marinho
 # github.com/tarcisio-marinho
 
+''' BIG O
+melhor caso - O(n)
+caso comum - O((n log(n)) ^ 2)
+pior caso - O((n log(n)) ^ 2)
+'''
+
 def shell_sort(lista, n, inc, num):
     num-=1
     while(num >= 0):

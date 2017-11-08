@@ -7,6 +7,10 @@ import time
 from quicksort import quick_sort
 from selectionsort import selection_sort
 from insertionsort import insertion_sort
+from mergesort import merge_sort
+from bubblesort import bubble_sort
+from timsort import tim_sort
+
 
 def quick_vs_tim():
     # PIOR CASO 

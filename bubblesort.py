@@ -3,6 +3,12 @@
 # by Tarcisio marinho
 # github.com/tarcisio-marinho
 
+''' BIG O
+melhor caso - O(n)
+caso comum - O(n^2)
+pior caso - O(n^2)
+'''
+
 def bubble_sort(lista, n):
     i = 0
     while(i < n-1):

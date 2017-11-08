@@ -3,6 +3,12 @@
 # by Tarcisio marinho
 # github.com/tarcisio-marinho
 
+''' BIG O
+melhor caso - O(n)
+caso comum - O(n^2)
+pior caso - O(n^2)
+'''
+
 def insertion_sort(lista, n):
     p = 1
     while(p<n):

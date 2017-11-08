@@ -3,6 +3,12 @@
 # by Tarcisio marinho
 # github.com/tarcisio-marinho
 
+''' BIG O
+melhor caso - O(n log(n))
+caso comum - O(n log(n))
+pior caso - O(n log(n))
+'''
+
 def merge_sort(obj):
     if len(obj) > 1:
         mid = len(obj)/2
