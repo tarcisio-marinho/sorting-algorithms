@@ -133,6 +133,12 @@ def quicksort_vs_bubble():
     fim = time.time()
     print("[QUICKSORT] 40000 (40 mil) inteiros Aleatorios\n[TEMPO] "+ str(fim - tempo))
     
+    lista = []
+
+    for i in range(40000):
+        aleatorio = random.randint(0, 40000)
+        lista.append(aleatorio)
+
     tempo = time.time()
     bubble_sort(lista, len(lista))
     fim = time.time()
@@ -153,6 +159,12 @@ def quicksort_vs_mergesort():
     fim = time.time()
     print("[QUICKSORT] 4000000 (4 milhoes) inteiros Aleatorios\n[TEMPO] "+ str(fim - tempo))
     
+    lista = []
+
+    for i in range(4000000):
+        aleatorio = random.randint(0, 4000000)
+        lista.append(aleatorio)
+
     tempo = time.time()
     merge_sort(lista)
     fim = time.time()
@@ -161,27 +173,35 @@ def quicksort_vs_mergesort():
 
 def quick_vs_selec_vs_insr():
     lista = []
-    lista2 = []
-    lista3 = []
 
     for i in range(40000):
         aleatorio = random.randint(0, 40000)
         lista.append(aleatorio)
-    lista2 = lista
-    lista3 = lista
-
+    
     tempo = time.time()
     quick_sort(lista, 0, len(lista) - 1)
     fim = time.time()
     print("[QUICKSORT] 40000 (40 mil) inteiros Aleatorios\n[TEMPO] "+ str(fim - tempo))
     
+    lista = []
+
+    for i in range(40000):
+        aleatorio = random.randint(0, 40000)
+        lista.append(aleatorio)
+    
     tempo = time.time()
-    selection_sort(lista2, len(lista2))
+    selection_sort(lista, len(lista))
     fim = time.time()
     print("[SELECTIONSORT] 40000 (40 mil) inteiros Aleatorios\n[TEMPO] "+ str(fim - tempo))
+    
+    lista = []
+
+    for i in range(40000):
+        aleatorio = random.randint(0, 40000)
+        lista.append(aleatorio)
 
     tempo = time.time()
-    insertion_sort(lista3, len(lista3))
+    insertion_sort(lista, len(lista))
     fim = time.time()
     print("[INSERTIONSORT] 40000 (40 mil) inteiros Aleatorios\n[TEMPO] "+ str(fim - tempo))
     print("\n")
@@ -189,7 +209,7 @@ def quick_vs_selec_vs_insr():
 if __name__ == "__main__":
     pass
     #quicksort_piorcaso()
-    #quicksort_average()
+    quicksort_average()
     #quicksort_vs_bubble()
     #quicksort_vs_mergesort()
-    quick_vs_selec_vs_insr()
+    #quick_vs_selec_vs_insr()
