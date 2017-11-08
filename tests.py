@@ -49,7 +49,7 @@ def quicksort_piorcaso():
         print("[TESTE] 400000000 (40 milhoes) inteiros\n[TEMPO] "+ str(fim - tempo))
         print("\n")
 
-    print("Testando o pior caso do quicksort")
+    print("Testando o pior caso do quicksort - O(n^2) - [Lista já ordenada]\n")
     teste1()
     teste2()
     teste3()
@@ -59,7 +59,3 @@ def quicksort_piorcaso():
 if __name__ == "__main__":
     pass
     quicksort_piorcaso()
-
-    #lista = [10, 20, 30, 2]
-    #quicksort(lista, 0, len(lista)-1)
-    #print(lista)
