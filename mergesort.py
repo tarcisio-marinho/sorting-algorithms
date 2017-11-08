@@ -34,8 +34,3 @@ def merge_sort(obj):
             obj[k] = right[j]
             j += 1
             k += 1
-
-lista = [10, 20, 2, 3, 12, 4, 1]
-
-merge_sort(lista)
-print(lista)
