@@ -49,11 +49,13 @@ def radixSort(arr):
 	while max1/exp > 0: 
 		countingSort(arr,exp) 
 		exp *= 10
+  
+  
+if __name__ == "__main__":
+	# Driver code to test above 
+	arr = [ 170, 45, 75, 90, 802, 24, 2, 66] 
+	radixSort(arr) 
 
-# Driver code to test above 
-arr = [ 170, 45, 75, 90, 802, 24, 2, 66] 
-radixSort(arr) 
-
-for i in range(len(arr)): 
-	print(arr[i]), 
+	for i in range(len(arr)): 
+		print(arr[i]), 
 
